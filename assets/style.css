@@ -1,0 +1,120 @@
+:root {
+    --highlight: #E164E5;
+    --dark: #333;
+    --light: #fff;
+}
+
+/* Fonts:
+   lucida console for code snippets
+   sans serif or trebuchet for everything else
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    width: 80%;
+    height: 20vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: var(--highlight);
+    margin-bottom: 4vh;
+    padding-top: 4vh;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90vh;
+    margin: 20px auto;
+}
+
+/* CARDS */
+
+.card {
+    width: 25%;
+    height: auto;
+    border: 3px dashed white;
+    margin: 25px;
+}
+
+.card h2 {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    background-color: var(--dark);
+    color: var(--highlight);
+    padding: 3px;
+    font-weight: 900;
+}
+
+.card p {
+    color: var(--highlight);
+    padding: 10px;
+    padding-top: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.code-snippet {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    background: linear-gradient(hotpink ,var(--highlight));
+    color: white;
+    font-family: "lucida console";
+    margin: 0 auto;
+}
+
+.code-snippet pre {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: var(--highlight);
+    height: 10vh;
+    display: block;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
